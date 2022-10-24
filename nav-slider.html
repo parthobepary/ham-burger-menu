@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navar with slider</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styel.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar bg-color navbar-expand-lg">
+        <div class="container-fluid navbar-content">
+            <div>
+                <img src="./image/x.svg" alt="">
+                <img src="./image/text.svg" alt="">
+                <img src="./image/betary.svg" alt="">
+            </div>
+            <button class="navbar-toggler bg-white" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item login">
+                        <div class="login-child"><img class="mr-4" src="./image/tala.svg" alt=""> Login</div>
+                    </li>
+                    <li class="x-logo">
+                        <img src="./image/xx.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slider -->
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active px">
+                    <div class="row">
+                        <div class=" col-12 col-sm-12 col-md-6 margin-top">
+                            <button class="first-btn mb-3">Amezing NFTS</button>
+                            <h3 class="py-2">
+                                Discover and <img src="./image//star.svg" alt="">
+                                <span style="color:yellow;">collect</span> amezing
+                                new <span class="jikjak">NFTS</span>
+                            </h3>
+                            <button class="watch-btn">Watch live <img src="./image//play.png" alt=""></button>
+                            <div>
+                                <img class="img-fluid mt-5" src="./image//brand.svg" alt="">
+                            </div>
+                            <div class="animation">
+                                <div class="ring"></div>
+                                <div class="ring"></div>
+                                <div class="ring"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 img-div d-none d-md-block">
+                            <div class="bg-img">
+                                <div class="box1">
+                                    <img class="img-fluid" src=" ./image//jikjak.svg" alt="">
+                                </div>
+                                <div class="circle-animation">
+                                    <div class="cercle"></div>
+                                    <div class="cercle"></div>
+                                </div>
+                                <div class="box2">
+                                    <img class="img-fluid" src="./image/bandor.png" alt="">
+                                    <div class="mb-5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item px">
+                    <div class="row">
+                        <div class=" col-12 col-sm-12 col-md-6 margin-top">
+                            <button class="first-btn mb-3">Amezing NFTS</button>
+                            <h3 class="py-2">
+                                Discover and <img src="./image//star.svg" alt="">
+                                <span style="color:yellow;">collect</span> amezing
+                                new <span class="jikjak">NFTS</span>
+                            </h3>
+                            <button class="watch-btn">Watch live <img src="./image//play.png" alt=""></button>
+                            <div>
+                                <img class="img-fluid mt-5" src="./image//brand.svg" alt="">
+                            </div>
+                            <div class="animation">
+                                <div class="ring"></div>
+                                <div class="ring"></div>
+                                <div class="ring"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 img-div d-none d-md-block">
+
+                            <div class="bg-img">
+                                <div class="box1">
+                                    <img class="img-fluid" src=" ./image//jikjak.svg" alt="">
+                                </div>
+                                <div class="circle-animation">
+                                    <div class="cercle"></div>
+                                    <div class="cercle"></div>
+                                </div>
+                                <div class="box2">
+                                    <img class="img-fluid" src="./image/bandor.png" alt="">
+                                    <div class="mb-5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </main>
+
+    <main>
+
+    </main>
+
+
+</body>
+
+</html>
