@@ -9,6 +9,7 @@
 body {
   height: 100%;
   background-color: #040c12;
+  animation: colorchange 4s linear infinite;
 }
 .bg-color {
   filter: drop-shadow(0px 2px 3.5px rgba(1, 2, 5, 0.44));
@@ -65,9 +66,7 @@ a:hover {
 .carousel-item {
   height: 100vh;
   min-height: 300px;
-}
-.carousel-caption {
-  bottom: 270px;
+  animation: moveIn 2s linear;
 }
 
 .carousel-caption h5 {
@@ -99,6 +98,8 @@ a:hover {
   height: 40px;
   margin-bottom: 10px;
   background-color: #e3fe0f;
+  font-weight: 500px;
+  animation: buttonmove 4s linear infinite;
 }
 h3 {
   font-size: 70px;
@@ -106,6 +107,7 @@ h3 {
   color: #ffffff;
   font-weight: 600;
   font-family: "Rubik";
+  animation: moveIn 2s linear;
 }
 /* common css */
 .px {
@@ -219,16 +221,7 @@ h3 {
   top: -66.66px;
 
 } */
-@keyframes animation {
-  0% {
-    transform: rotate(0deg);
-    border-top: 6px solid orangered;
-  }
-  100% {
-    transform: rotate(360deg);
-    border-top: 4px solid red;
-  }
-}
+
 /* cercile animation */
 
 .circle-animation {
@@ -295,5 +288,45 @@ h3 {
     border-radius: 50px;
     width: 15px;
     height: 15px;
+  }
+}
+@keyframes animation {
+  0% {
+    transform: rotate(0deg);
+    border-top: 6px solid orangered;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top: 4px solid red;
+  }
+}
+@keyframes colorchange {
+  from {
+    background-color: rgb(20, 1, 1);
+  }
+  to {
+    background-color: rgb(6, 19, 48);
+  }
+}
+@keyframes buttonmove {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes moveIn {
+  50%, 100% { 
+    transform: translateY(0em)
+  }
+  0%   { 
+  opacity: 0; 
+  filter: blur(10px);
+  
+  }
+  100% { 
+  opacity: 1; 
+  filter: blur(0px);
   }
 }
