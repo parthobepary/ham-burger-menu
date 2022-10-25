@@ -290,11 +290,11 @@ h3 {
 @keyframes animation {
   0% {
     transform: rotate(0deg);
-    border-top: 6px solid orangered;
+    border-top: 6px solid rgb(175, 247, 8);
   }
   100% {
     transform: rotate(360deg);
-    border-top: 4px solid red;
+    border-top: 4px solid rgb(247, 0, 255);
   }
 }
 @keyframes colorchange {
