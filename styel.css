@@ -66,21 +66,8 @@ a:hover {
 .carousel-item {
   height: 100vh;
   min-height: 300px;
+  background-image: url("./image/Slider.png");
   animation: moveIn 2s linear;
-}
-
-.carousel-caption h5 {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
-}
-
-.carousel-caption p {
-  width: 75%;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.9;
 }
 .first-btn {
   opacity: 0.322;
@@ -317,16 +304,16 @@ h3 {
   }
 }
 @keyframes moveIn {
-  50%, 100% { 
-    transform: translateY(0em)
+  50%,
+  100% {
+    transform: translateY(0em);
   }
-  0%   { 
-  opacity: 0; 
-  filter: blur(10px);
-  
+  0% {
+    opacity: 0;
+    filter: blur(10px);
   }
-  100% { 
-  opacity: 1; 
-  filter: blur(0px);
+  100% {
+    opacity: 1;
+    filter: blur(0px);
   }
 }
